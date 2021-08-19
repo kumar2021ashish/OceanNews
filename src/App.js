@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div>
       < Nav />
-     <h1 className="text-center">NEWS-OCEAN</h1> 
+     <h1 className="text-center">OceanNews</h1> 
     </div>
   )
 } 
