@@ -7,6 +7,7 @@ const App = () => {
       < Nav />
      <h1 className="text-center">OceanNews</h1> 
     </div>
+    
   )
 } 
 
