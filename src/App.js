@@ -6,6 +6,8 @@ import Question from './Question';
 import Grid from '@material-ui/core/Grid';
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/Card";
+import "./app.css";
+
 const Quiz = () =>{
   const [questions,setQuestions]=useState(null);
   const [count]=useState(0);
@@ -24,12 +26,12 @@ const Quiz = () =>{
   },[questions,count]);
   if(!questions) return <p className="text-light text-muted">Loading...</p>;
 
-  return (
-    <div>
-      < Nav />
+  return (  
+    <>
+     < Nav />
+     <h1 className="display-4 text-center">OceanNews</h1> 
+    <div className="all_news">   
 
-    
-    <h1 className="text-center">OceanNews</h1> 
     {questions.map((item) =>
     <div class="container">
        <div class="row">
@@ -47,7 +49,7 @@ const Quiz = () =>{
 </Card>
 </div>
 </div>
-<br></br><br></br><br></br><br></br><br></br>
+<br></br><br></br><br></br>
 </div>
 
 
@@ -58,6 +60,7 @@ const Quiz = () =>{
 
     </div>
 
+</>
     
   );
 } 
